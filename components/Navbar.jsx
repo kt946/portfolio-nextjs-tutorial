@@ -6,8 +6,7 @@ import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 
 const Navbar = () => {
-  // prettier-ignore
-  const[nav, setNav] = useState(false);
+  const [nav, setNav] = useState(false);
 
   const handleNav = () => {
     setNav(!nav);
