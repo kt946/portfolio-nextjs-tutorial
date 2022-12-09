@@ -10,21 +10,25 @@ const Projects = () => {
     {
       title: 'Property Finder',
       backgroundImg: propertyImg,
+      tech: 'React JS',
       projectUrl: '/property',
     },
     {
       title: 'Crypto App',
       backgroundImg: cryptoImg,
+      tech: 'React JS',
       projectUrl: '/crypto',
     },
     {
-      title: 'Netflix',
+      title: 'Netflix App',
       backgroundImg: netflixImg,
+      tech: 'React JS',
       projectUrl: '/netflix',
     },
     {
-      title: 'Twitch',
+      title: 'Twitch UI',
       backgroundImg: twitchImg,
+      tech: 'Next JS',
       projectUrl: '/twitch',
     },
   ];
@@ -40,6 +44,7 @@ const Projects = () => {
               key={project.title}
               title={project.title}
               backgroundImg={project.backgroundImg}
+              tech={project.tech}
               projectUrl={project.projectUrl}
             />
           ))}
