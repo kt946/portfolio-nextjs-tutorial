@@ -71,10 +71,10 @@ const Navbar = () => {
       style={{ backgroundColor: `${navBg}` }}
       className={`fixed w-full h-20 z-[100] ${shadow ? 'shadow-xl' : ''}`}
     >
-      <div className='flex justify-between items-center w-full h-full px-4 2xl:px-16'>
+      <div className='flex justify-between items-center w-full h-full px-6 2xl:px-16'>
         <Link href='/'>
           <Image
-            src='/assets/navLogo.png'
+            src='/assets/navLogo.svg'
             alt=''
             width={50}
             height={50}
@@ -121,7 +121,7 @@ const Navbar = () => {
             <div className='flex w-full items-center justify-between'>
               {/* logo */}
               <Image
-                src='/assets/navLogo.png'
+                src='/assets/navLogo.svg'
                 width={40}
                 height={40}
                 alt=''
