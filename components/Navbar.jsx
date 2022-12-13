@@ -36,20 +36,20 @@ const Navbar = () => {
     },
   ];
 
-  useEffect(() => {
-    if (
-      router.asPath === '/property' ||
-      router.asPath === '/crypto' ||
-      router.asPath === '/netflix' ||
-      router.asPath === '/twitch'
-    ) {
-      setNavBg('transparent');
-      setLinkColor('#ecf0f3');
-    } else {
-      setNavBg('#ecf0f3');
-      setLinkColor('#1f2937');
-    }
-  }, [router]);
+  // useEffect(() => {
+  //   if (
+  //     router.asPath === '/property' ||
+  //     router.asPath === '/crypto' ||
+  //     router.asPath === '/netflix' ||
+  //     router.asPath === '/twitch'
+  //   ) {
+  //     setNavBg('transparent');
+  //     setLinkColor('#ecf0f3');
+  //   } else {
+  //     setNavBg('#ecf0f3');
+  //     setLinkColor('#1f2937');
+  //   }
+  // }, [router]);
 
   const handleNav = () => {
     setNav(!nav);
@@ -68,8 +68,8 @@ const Navbar = () => {
 
   return (
     <div
-      style={{ backgroundColor: `${navBg}` }}
-      className={`fixed w-full h-20 z-[100] ${shadow ? 'shadow-xl' : ''}`}
+      // style={{ backgroundColor: `${navBg}` }}
+      className={`fixed w-full h-20 z-[100] bg-[#ecf0f3] ${shadow ? 'shadow-xl' : ''}`}
     >
       <div className='flex justify-between items-center w-full h-full px-6 2xl:px-16'>
         <Link href='/'>
@@ -83,7 +83,7 @@ const Navbar = () => {
         <div>
           {/* nav links */}
           <ul
-            style={{ color: `${linkColor}` }}
+            // style={{ color: `${linkColor}` }}
             className='hidden md:flex'
           >
             {navLinks.map((navlink) => (
@@ -99,7 +99,7 @@ const Navbar = () => {
           </ul>
           {/* mobile nav menu button */}
           <div
-            style={{ color: `${linkColor}` }}
+            // style={{ color: `${linkColor}` }}
             onClick={handleNav}
             className='md:hidden'
           >
